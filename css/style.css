@@ -280,17 +280,16 @@ nav .icon-container a:nth-child(1) {
 .colocation-section {
   position: relative;
   width: 80%;
-  margin: 0 auto;
-  border: 2px solid red;
+  margin: 200px auto;
 }
 
 .colocation-section .c-container img {
-  width: 50%;
+  width: 60%;
 }
 
 .colocation-section .c-container {
   display: flex;
-
+  width: 80%;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -298,15 +297,49 @@ nav .icon-container a:nth-child(1) {
 .colocation-section .c-container .left-wrapper {
   align-self: center;
   height: 100%;
-  width: 50%;
-  border: 2px solid red;
+  width: 40%;
+  padding: 30px;
 }
 
-.s-circle {
-  /* position: absolute; */
-  top: 100px;
+.colocation-section .c-container .left-wrapper p {
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 30px;
+}
+
+.colocation-section .c-container .left-wrapper button {
+  padding: 15px 30px;
+  margin-top: 70px;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #fff;
+  background-color: #494399;
+  cursor: pointer;
+}
+
+.colocation-section .s-circle {
+  position: absolute;
+  top: -20%;
+  right: 0;
   height: 100px;
   width: 100px;
   background-color: #72efe9;
   border-radius: 50%;
+}
+
+.colocation-section .t-wrapper {
+  position: absolute;
+  bottom: -25%;
+  right: 0;
+  padding: 30px;
+  width: 40%;
+  background-color: #72efe9;
+}
+
+.colocation-section .t-wrapper h3 {
+  font-size: 45px;
+  color: #494399;
 }
