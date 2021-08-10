@@ -34,8 +34,72 @@ nav .icon-container a:hover {
   color: #72efe9;
 }
 
-nav .icon-container a:nth-child(1) {
+nav .icon-container .burger {
   margin-right: 30px;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .icon-container .burger:hover {
+  color: #72efe9;
+}
+
+nav .menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 300px;
+  background-color: #000;
+  z-index: 10;
+  transition: 0.3s linear;
+}
+
+nav .menu .close-menu {
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+nav .menu .close-menu:hover {
+  color: #72efe9;
+}
+
+nav .menu a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+nav .menu a:hover {
+  color: #72efe9;
+}
+
+nav .menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 60vh;
+}
+
+.menu.active {
+  left: 0;
+}
+
+.section.blur {
+  filter: blur(2px);
 }
 
 .welcome-section {

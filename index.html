@@ -20,15 +20,27 @@
           <a href="#"><img src="img/default-logo.png" alt="" /></a>
         </div>
         <div class="icon-container">
-          <a href="#"><i class="fas fa-bars"></i></a>
+          <button class="burger"><i class="fas fa-bars"></i></button>
           <a href="#"><i class="fab fa-facebook"></i></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
+        <aside class="menu">
+          <button class="close-menu"><i class="fas fa-times"></i></button>
+          <ul>
+            <li><a href="#" class="welcome">welcome section</a></li>
+            <li><a href="#" class="features">features section</a></li>
+            <li><a href="#" class="visualization">visualization section</a></li>
+            <li><a href="#" class="colocation">colocation section</a></li>
+            <li><a href="#" class="availability">availability section</a></li>
+            <li><a href="#" class="hosting">hosting section</a></li>
+            <li><a href="#" class="contact">contact section</a></li>
+          </ul>
+        </aside>
       </nav>
     </header>
     <main>
-      <section class="welcome-section">
+      <section class="welcome-section" id="welcome">
         <div class="m-photo"><img src="img/dfsfdsf.jpg" alt="" /></div>
         <div class="circle"></div>
         <div class="m-strip"></div>
@@ -42,7 +54,7 @@
           <button>learn more</button>
         </div>
       </section>
-      <section class="features-section">
+      <section class="features-section" id="features">
         <h4>features</h4>
         <h1>easly accessible & secure</h1>
         <div class="features-wrapper">
@@ -80,7 +92,7 @@
         <div class="h-bar"></div>
         <button>learn more</button>
       </section>
-      <section class="visualization-section">
+      <section class="visualization-section" id="visualization">
         <h2>data visualization</h2>
         <div class="v-wrapper">
           <img src="/img/1055-Converted.jpg" alt="" />
@@ -109,7 +121,7 @@
         <h3>Our people make the difference!</h3>
         <button>read more</button>
       </div>
-      <section class="colocation-section">
+      <section class="colocation-section" id="colocation">
         <div class="s-circle"></div>
         <div class="c-container">
           <div class="left-wrapper">
@@ -130,7 +142,7 @@
           </h3>
         </div>
       </section>
-      <section class="availability-section">
+      <section class="availability-section" id="availability">
         <div class="l-wrapper">
           <h1>Lorem ipsum dolor sit amet.</h1>
           <div class="s-circle"></div>
@@ -145,7 +157,7 @@
           <button>contact us</button>
         </div>
       </section>
-      <section class="hosting-section">
+      <section class="hosting-section" id="hosting">
         <div class="h-photo">
           <img src="img/xsx.jpg" alt="" />
           <div class="h-bar"></div>
@@ -160,7 +172,7 @@
         </div>
         <button>learn more</button>
       </section>
-      <section class="contact-section">
+      <section class="contact-section" id="contact">
         <div class="c-photo">
           <img src="/img/b4f60df5-647e-b99f-a687-ec47c26aa869.jpg" alt="" />
           <div class="photo-bgc"></div>
@@ -184,5 +196,7 @@
         </form>
       </section>
     </main>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
