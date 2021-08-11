@@ -15,9 +15,10 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   margin: 0px auto;
-  padding: 20px 0;
+  padding: 20px 10%;
+  transition: 0.9s;
 }
 
 nav .logo img {
@@ -98,8 +99,19 @@ nav .menu ul {
   left: 0;
 }
 
-.section.blur {
-  filter: blur(2px);
+.filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+}
+
+.filter.active {
+  display: block;
 }
 
 .welcome-section {
@@ -180,6 +192,7 @@ nav .menu ul {
 .features-section {
   text-align: center;
   position: relative;
+  margin-top: 100px;
 }
 
 .features-section h4 {
